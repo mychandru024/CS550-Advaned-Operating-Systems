@@ -1,0 +1,184 @@
+
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 2
+Enter filename : moon.txt
+Enter Host name of the download server : localhost
+Enter port number of of the download server : 4000
+Message to User:
+File is downloaded to PeerDownloads/Cache1_N1804047283 Folder
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 5
+ ----------------------------------------------------------------
+/                                                                \
+                      Peer File Information
+\                                                                /
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------
+/                                                                \
+{
+  "version" : 1,
+  "original" : false,
+  "name" : "moon.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 22, 50, 33, 671000000 ],
+  "ttr" : 86400,
+  "stale" : false
+}
+\                                                                /
+ ----------------------------------------------------------------
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 5
+ ----------------------------------------------------------------
+/                                                                \
+                      Peer File Information
+\                                                                /
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------
+/                                                                \
+{
+  "version" : 1,
+  "original" : false,
+  "name" : "moon.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 22, 50, 33, 671000000 ],
+  "ttr" : 86400,
+  "stale" : false
+}
+\                                                                /
+ ----------------------------------------------------------------
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : File Meta Data out-dated
+5
+ ----------------------------------------------------------------
+/                                                                \
+                      Peer File Information
+\                                                                /
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------
+/                                                                \
+{
+  "version" : 2,
+  "original" : true,
+  "name" : "moon.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 22, 51, 23, 647000000 ],
+  "ttr" : 86400,
+  "stale" : true
+}
+\                                                                /
+ ----------------------------------------------------------------
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 6
+Enter filename :
+moon.txt
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 5
+ ----------------------------------------------------------------
+/                                                                \
+                      Peer File Information
+\                                                                /
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------
+/                                                                \
+{
+  "version" : 2,
+  "original" : false,
+  "name" : "moon.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 22, 51, 23, 647000000 ],
+  "ttr" : 86400,
+  "stale" : false
+}
+\                                                                /
+ ----------------------------------------------------------------
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice :

@@ -1,0 +1,12 @@
+Steps to run our program :
+
+1. Place the shared shell script "run.sh" , shared jar file and corresponding configuration file in a seperate folder for each peer.
+   For example :
+	if I want to create a peers running on port 52001, I will create a folders(any name) and place "run.sh" , jar file and its config file "52001config.file" in it.
+2. Run the shell script (./run.sh)
+3. Default config? Y/N, Say N
+4. Enter ipaddress of the system where peer is running (if it this system itself, enter "localhost")
+5. Enter port where this peer has to run.. (I will say 52001 if I have placed 52001config.file)
+6. later select options accordingly
+7. If you download any files it will be stored in "sharedFolder(ip:port)". in my case "sharedFolderlocalhost:52001"
+8. Any file shared by this peer should also be stored in this folder.. this folder will be created on peer's bootup

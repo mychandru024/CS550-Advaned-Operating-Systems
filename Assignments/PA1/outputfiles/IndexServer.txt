@@ -1,0 +1,12 @@
+abc@abc-Satellite-C640:~/AOS/NEW/IS$ java -jar FileSharingSystem-1.0-Release.jar 
+***************************************
+1. Run Index Server 
+2. Run Peer
+Enter your choice (1/2) ? : 1
+Default config / Manual config ? (yes/no or y/n): n
+Enter Index Server Port Address : 
+51717
+------------------------------------------
+Configuration : 
+Index Server Address -> localhost:51717
+------------------------------------------

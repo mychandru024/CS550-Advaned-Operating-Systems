@@ -1,0 +1,242 @@
+Verification for linear topology with 10 peers :
+
+peer1 at the sart and peer10 at the end
+
+Peer1 has file1.txt
+peer2 has file2.txt
+peer3 has file3.txt
+
+
+searching for file1.txt from peer10
+
+Note that we are using TTL of 7, so the message is not reaching peer1
+
+Console outputs of all peers from peer1 to peer10(Spaces are proveided to differentiate)
+
+
+Note :
+Message has reached peer3, but is not forwared to 2 as the TTL is 1 when it reached peer3
+If peer3 had file1.txt it would have replied with queryhit message
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52001
+Peer address localhost:52001. 
+My Neighbours are 
+localhost:52002
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+
+
+Default config ? (yes/no) or (y/n): n
+lEnter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52002
+Peer address llocalhost:52002. 
+My Neighbours are 
+localhost:52001
+localhost:52003
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52003
+Peer address localhost:52003. 
+My Neighbours are 
+localhost:52002
+localhost:52004
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52004 1
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52004
+Peer address localhost:52004. 
+My Neighbours are 
+localhost:52003
+localhost:52005
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52005 2
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52005
+Peer address localhost:52005. 
+My Neighbours are 
+localhost:52004
+localhost:52006
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52006 3
+Received Message : query localhost:52010_1 file1.txt localhost:52004 1
+Not forwarding query localhost:52010_1 file1.txt localhost:52004 1
+
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52006
+Peer address localhost:52006. 
+My Neighbours are 
+localhost:52005
+localhost:52007
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52007 4
+Received Message : query localhost:52010_1 file1.txt localhost:52005 2
+Not forwarding query localhost:52010_1 file1.txt localhost:52005 2
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52007
+Peer address localhost:52007. 
+My Neighbours are 
+localhost:52006
+localhost:52008
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52008 5
+Received Message : query localhost:52010_1 file1.txt localhost:52006 3
+Not forwarding query localhost:52010_1 file1.txt localhost:52006 3
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52008
+Peer address localhost:52008. 
+My Neighbours are 
+localhost:52007
+localhost:52009
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52009 6
+Received Message : query localhost:52010_1 file1.txt localhost:52007 4
+Not forwarding query localhost:52010_1 file1.txt localhost:52007 4
+
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52009
+Peer address localhost:52009. 
+My Neighbours are 
+localhost:52008
+localhost:52010
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52010 7
+Received Message : query localhost:52010_1 file1.txt localhost:52008 5
+Not forwarding query localhost:52010_1 file1.txt localhost:52008 5
+
+
+
+
+
+Default config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Port address  : 
+52010
+Peer address localhost:52010. 
+My Neighbours are 
+localhost:52009
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+1
+Enter filename : 
+
+file1.txt
+
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Exit
+Enter your choice number
+Received Message : query localhost:52010_1 file1.txt localhost:52009 6
+Not forwarding query localhost:52010_1 file1.txt localhost:52009 6
+
+
+
+
+

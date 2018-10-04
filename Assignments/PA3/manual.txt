@@ -1,0 +1,44 @@
+# Manual
+
+1. Create the folder structure like below
+
+<pre>
+
+peer1
+├── FileSharingSystem.jar
+├── PeerDownloads
+└── config-4040peer1.properties
+
+</pre>
+
+## properties file content should have
+<pre>
+peer.port=4040
+peer.neighbors=localhost:5050,localhost:6060
+pull.TTR=10
+</pre>
+
+Now Run the command `java -jar FileSharingSystem.jar`
+
+
+### Note
+- We need to use either pull jar or push jar.
+- We also kept debug jar files for testing purpose.
+
+
+# Once program is running you can see the master and cache folder insider PeerDownloads
+
+
+<pre>
+peer1
+├── FileSharingSystem.jar
+├── PeerDownloads
+│   ├── Cache1_N1804106741
+│   └── Master1_N1804106741
+│       └── moon.txt
+└── config-4040peer1.properties
+
+</pre>
+
+- cache files will be in cache folder.
+- master folder contain the origin files.

@@ -1,0 +1,43 @@
+How to run the program :
+1. Create a seperate folder for Index server and each peer and save the shared jar file inside all the folders.
+	say if you want to have 3 peers and a Index Server :
+         Create a folder for Index Server and all 3 peers seperately and copy jar file inside them.
+
+2. run below command in each folder :
+	java -jar FileSharingSystem-1.0-Release.jar
+
+3. once you run above command you will get 1 options to choose from (like below) :
+
+abc@abc-Satellite-C640:~/AOS/NEW/P1$ java -jar FileSharingSystem-1.0-Release.jar 
+***************************************
+1. Run Index Server 
+2. Run Peer
+Enter your choice (1/2) ? : 
+
+to run Index Server select 1 and press enter
+Enter your choice (1/2) ? : 1
+
+if you want to enter a port for Index Server enter 'n' and you will be promted for the port number(as shown below)
+Default config / Manual config ? (yes/no or y/n): n
+Enter Index Server Port Address : 
+51717
+------------------------------------------
+Configuration : 
+Index Server Address -> localhost:51717
+------------------------------------------
+
+if you enter 'y' Index Server will be maually configured on port 5000
+
+
+4. to run Peer select 2 and press enter
+Enter your choice (1/2) ? : 2
+Default config / Manual config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 ---->(Enter address of machine where Index server is running)
+localhost
+Enter Index Server Port Address  : ----> port number configured for the Index Server
+51717
+Enter PeerServer Port Address  : ----> what port do you want this peer to be acting as a client
+52001
+
+
+

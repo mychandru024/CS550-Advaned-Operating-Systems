@@ -1,0 +1,391 @@
+				Test cases ran and outputs 
+
+Configuration : Star Topology
+Mechanism : PUSH BASED
+
+Central peer is running on port 4000 and all other 4 peers are running on ports 5000,6000, 7000 and 8000.
+
+Initial status of the program when the peers start :
+
+Peer running at localhost:4000 :
+
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Master1_N1804106865
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Cache1_N1804106865
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Peer address localhost:4000
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Peer Neighbours  
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  localhost:5000
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  localhost:6000
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  localhost:7000
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  localhost:8000
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Watching this folder PeerDownloads/Master1_N1804106865
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Peer Server running ... 
+Mon Mar 20 20:41:01 CDT 2017 >>>> PA3 - Debug Information ::  Peer Client running ... 
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display Peer files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 
+
+
+Peer running at localhost:5000 :
+
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Master1_N1804077074
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Cache1_N1804077074
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Peer address localhost:5000
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Peer Neighbours  
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  localhost:4000
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Watching this folder PeerDownloads/Master1_N1804077074
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Peer Server running ... 
+Mon Mar 20 20:32:27 CDT 2017 >>>> PA3 - Debug Information ::  Peer Client running ... 
+******************************************************************
+Peer running at localhost:6000 :
+
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Master1_N1804047283
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Cache1_N1804047283
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Peer address localhost:6000
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Peer Neighbours  
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  localhost:4000
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Watching this folder PeerDownloads/Master1_N1804047283
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Peer Server running ... 
+Mon Mar 20 20:32:30 CDT 2017 >>>> PA3 - Debug Information ::  Peer Client running ... 
+******************************************************************
+
+Peer running at localhost:7000 :
+
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Master1_N1804017492
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Cache1_N1804017492
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Peer address localhost:7000
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Peer Neighbours  
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  localhost:4000
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Watching this folder PeerDownloads/Master1_N1804017492
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Peer Server running ... 
+Mon Mar 20 20:32:33 CDT 2017 >>>> PA3 - Debug Information ::  Peer Client running ... 
+
+Peer running at localhost:8000 : 
+
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Master1_N1803987701
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Creating folder PeerDownloads/Cache1_N1803987701
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Peer address localhost:8000
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Peer Neighbours  
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  localhost:4000
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Watching this folder PeerDownloads/Master1_N1803987701
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Peer Server running ... 
+Mon Mar 20 20:32:40 CDT 2017 >>>> PA3 - Debug Information ::  Peer Client running ... 
+
+
+
+
+
+
+
+
+
+
+All the peers when started create two folder for themselves, namely :
+1. Master folder (which store the files that this peer own)
+2. Cache folder (which stores the files downloaded from other peers)
+
+Once the peers are started and folders are created, place the files in the master folders of the respective peers :
+for example if you want to below configuration :
+peer1 owns 1.txt
+peer2 owns 2.txt
+peer3 owns 3.txt
+
+Follow below steps :
+1. Start three peers 
+2. Place the files in their respective folders(Note that peer has to be running when the files are placed)
+
+Sample output when the a file is created :
+
+File named 4.txt is created and contents are written on peer running at localhost:4000
+(Note : In Linix when file is created and written, internally a file is created, contents are written into a temporary file, original file is deleted and temporary file is renamed. So when I am watching on the directory I get all 3 events )
+
+Your Choice : Mon Mar 20 20:53:43 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 20:53:43 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_CREATE file = 4.txt
+Mon Mar 20 20:53:44 CDT 2017 >>>> PA3 - Debug Information ::  {"filesMetaData":{"4.txt":{"version":1,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,20,53,43,418000000],"stale":false,"ttr":90}}}
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_DELETE file = 4.txt
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_CREATE file = 4.txt
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  {"version":2,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,20,53,50,106000000],"stale":false,"ttr":90}
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  {"filesMetaData":{"4.txt":{"version":2,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,20,53,50,106000000],"stale":false,"ttr":90}}}
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_MODIFY file = 4.txt
+
+A invalidation message is sent out to all nerighbors.
+
+localhost:5000 console :
+Mon Mar 20 20:53:50 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : INVALIDATION localhost:4000_1 4.txt 2 7 localhost:4000
+
+Not forwarding to server from whom I received this message
+
+
+
+
+
+
+Below is the console output at localhost:4000 after file is created : 
+
+*****************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display Peer files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+5
+ ---------------------------------------------------------------- 
+/                                                                \
+                      Peer File Information                        
+\                                                                /
+ ---------------------------------------------------------------- 
+ ---------------------------------------------------------------- 
+/                                                                \
+{
+  "version" : 2,
+  "original" : true,
+  "name" : "4.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 20, 53, 50, 106000000 ],
+  "stale" : false,
+  "ttr" : 90
+}
+\                                                                /
+ ---------------------------------------------------------------- 
+
+this gives the file information of the file that this peer is contains
+(Note : this options lists both owned and downloaded files)
+
+File lookup : 
+
+Below is the console output of localhost:5000 when lookup is done for 4.txt :
+(a query message is sent out to all neighbors and received the queryhit message fromlocalhost:4000)
+******************************************************************
+Your Choice : 1 
+Mon Mar 20 21:16:40 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : queryhit localhost:5000_2 4.txt localhost:4000 7 {"version":2,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,20,53,50,106000000],"stale":false,"ttr":90} 2017-03-20T20:53:50.106 1
+
+------------------------------------------------------------------ 
+File 4.txt found at peer with port localhost:4000 
+
+
+
+
+Console output of localhost:4000 where the file 4.txt resides :
+(a query message is received from localhost:4000 and once file is found queryhit message is sent out to localhost:5000)
+******************************************************************
+Mon Mar 20 21:16:40 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : query localhost:5000_2 4.txt localhost:5000 7
+ 
+
+File Download :
+
+Below is the console output at localhost:5000 when file, 4.txt, is downloaded from localhost:4000
+Your choice : 2
+Enter filename : 4.txt
+Enter Host name of the download server : localhost
+Enter port number of of the download server : 4000
+Message to User: 
+File is downloaded to PeerDownloads/Cache1_N1804077074 Folder
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 5 //display file information
+ ---------------------------------------------------------------- 
+/                                                                \
+                      Peer File Information                        
+\                                                                /
+ ---------------------------------------------------------------- 
+ ---------------------------------------------------------------- 
+/                                                                \
+{
+  "version" : 2,
+  "original" : false,
+  "name" : "4.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 20, 53, 50, 106000000 ],
+  "stale" : false,
+  "ttr" : 90
+}
+\                                                                /
+ ----------------------------------------------------------------   
+
+Console output at localhost:4000 during download: 
+Mon Mar 20 21:16:41 CDT 2017 >>>> PA3 - Debug Information ::  Removing localhost:5000_2
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : download_metadata 4.txt
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Serving request of the type = download_metadata
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Sending Meta Data.
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : download 4.txt
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Serving request of the type = download
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Sending File Data
+Note : we had to intenally split download into two stages :
+first stage : request is sent to download the file metadata (version, origin server, last update time etc)
+second stage : request is sent to download the actual file (i.e the file contents)
+
+File 4.txt is manually updated at localhost:4000
+
+Console output :
+Mon Mar 20 21:16:41 CDT 2017 >>>> PA3 - Debug Information ::  Removing localhost:5000_2
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : download_metadata 4.txt
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Serving request of the type = download_metadata
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Sending Meta Data.
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : download 4.txt
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Serving request of the type = download
+Mon Mar 20 21:28:03 CDT 2017 >>>> PA3 - Debug Information ::  Sending File Data
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_DELETE file = 4.txt
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_CREATE file = 4.txt
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  {"version":3,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,21,38,8,112000000],"stale":false,"ttr":90}
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  {"filesMetaData":{"4.txt":{"version":3,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,21,38,8,112000000],"stale":false,"ttr":90}}}
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Forwarding create/modify/delete event
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Event = ENTRY_MODIFY file = 4.txt
+
+An Invalidation message is sent out to all neighbors :
+
+console output at localhost:5000
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : INVALIDATION localhost:4000_2 4.txt 3 7 localhost:4000
+
+console output at localhost:6000
+Mon Mar 20 21:38:08 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : INVALIDATION localhost:4000_2 4.txt 3 7 localhost:4000
+
+File information after handling INVALIDATION message for 4.txt from localhost:4000 : 
+(Note that the file is marked as Stale)
+
+5
+ ---------------------------------------------------------------- 
+/                                                                \
+                      Peer File Information                        
+\                                                                /
+ ---------------------------------------------------------------- 
+ ---------------------------------------------------------------- 
+/                                                                \
+{
+  "version" : 3,
+  "original" : false,
+  "name" : "4.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 20, 53, 50, 106000000 ],
+  "stale" : true,
+  "ttr" : 90
+}
+\                                                                /
+ ---------------------------------------------------------------- 
+
+File is refreshed using option 6 and then file staus is displayed using option 5 :
+(Note that after refreshing, file is marked as not stale)
+
+Your Choice : 6
+Enter filename : 
+4.txt
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : 5
+ ---------------------------------------------------------------- 
+/                                                                \
+                      Peer File Information                        
+\                                                                /
+ ---------------------------------------------------------------- 
+ ---------------------------------------------------------------- 
+/                                                                \
+{
+  "version" : 3,
+  "original" : false,
+  "name" : "4.txt",
+  "fromAddress" : {
+    "url" : "localhost",
+    "port" : 4000
+  },
+  "lastUpdated" : [ 2017, 3, 20, 21, 38, 8, 112000000 ],
+  "stale" : false,
+  "ttr" : 90
+}
+\                                                                /
+ ----------------------------------------------------------------
+
+
+Lookup from another peer, i.e, localhost:6000
+(Note that there are two results from localhost:4000 and localhost:5000)
+
+Your Choice : 1
+Enter filename : 4.txt
+******************************************************************
+Peer Display Menu ************************************************
+1 : Lookup a file
+2 : Download file from a peer
+3 : Display seen query messages
+4 : Display seen queryhit messages
+5 : Display downloaded files info
+6 : Refresh a stale file
+7 : Modify one of the files held by me
+8 : Exit
+Enter your choice number
+******************************************************************
+Your Choice : Mon Mar 20 21:48:10 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : query localhost:6000_3 4.txt localhost:4000 6
+Mon Mar 20 21:48:10 CDT 2017 >>>> PA3 - Debug Information ::  Not forwarding query localhost:6000_3 4.txt localhost:4000 6
+Mon Mar 20 21:48:10 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : queryhit localhost:6000_3 4.txt localhost:4000 7 {"version":3,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,21,38,8,112000000],"stale":false,"ttr":90} 2017-03-20T21:38:08.112 1
+
+------------------------------------------------------------------ 
+File 4.txt found at peer with port localhost:4000 
+------------------------------------------------------------------
+Mon Mar 20 21:48:10 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : queryhit localhost:6000_3 4.txt localhost:5000 6 {"version":3,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,21,38,8,112000000],"stale":false,"ttr":90} 2017-03-20T21:38:08.112 1
+
+------------------------------------------------------------------ 
+ File 4.txt found at peer with port localhost:5000
+
+
+Lookup from another peer, i.e, localhost:6000, when download file at localhost:5000 is stale
+(Note that there is only one results from localhost:4000)
+
+Console output when 4.txt was invalidated from localhost:4000
+localhost:4000 has pushed INVALIDATION message to all the neighbors
+Mon Mar 20 21:50:29 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : INVALIDATION localhost:4000_3 4.txt 4 7 localhost:4000
+
+
+Your Choice : 1
+Enter filename : 4.txt
+Mon Mar 20 21:51:23 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : query localhost:6000_5 4.txt localhost:4000 6
+Mon Mar 20 21:51:23 CDT 2017 >>>> PA3 - Debug Information ::  Not forwarding query localhost:6000_5 4.txt localhost:4000 6
+Mon Mar 20 21:51:23 CDT 2017 >>>> PA3 - Debug Information ::  Received Message : queryhit localhost:6000_5 4.txt localhost:4000 7 {"version":4,"original":true,"name":"4.txt","fromAddress":{"url":"localhost","port":4000},"lastUpdated":[2017,3,20,21,50,29,367000000],"stale":false,"ttr":90} 2017-03-20T21:50:29.367 1
+
+------------------------------------------------------------------ 
+File 4.txt found at peer with port localhost:4000 
+------------------------------------------------------------------

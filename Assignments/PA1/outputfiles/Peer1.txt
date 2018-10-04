@@ -1,0 +1,151 @@
+abc@abc-Satellite-C640:~/AOS/NEW/P1$ java -jar FileSharingSystem-1.0-Release.jar 
+***************************************
+1. Run Index Server 
+2. Run Peer
+Enter your choice (1/2) ? : 2
+Default config / Manual config ? (yes/no) or (y/n): n
+Enter Host Name Example: 'localhost' or 127.0.0.1 
+localhost
+Enter Index Server Port Address  : 
+51717
+Enter PeerServer Port Address  : 
+52001
+------------------------------------------
+Configuration : 
+Index Server Address : localhost:51717
+Peer Server Address : localhost:52001
+Peer Folder is created Dir Name:peer_52001
+------------------------------------------
+Peer Server Started,listening to port:52001
+------------------------------------------
+Peer Client Started
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+3
+Enter file location : 
+Example: /user/files/text1.txt  
+52001.txt
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+1
+Enter filename : 
+52001.txt
+Socket port at client from peer client file : 36870
+File available location : 
+***********************************************
+localhost:52001
+***********************************************
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+1
+Enter filename : 
+one.txt
+Socket port at client from peer client file : 36887
+File available location : 
+***********************************************
+No results...
+***********************************************
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+3
+Enter file location : 
+Example: /user/files/text1.txt  
+one.txt
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+1
+Enter filename : 
+one.txt
+Socket port at client from peer client file : 36889
+File available location : 
+***********************************************
+localhost:52001
+***********************************************
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+1
+Enter filename : 
+52001.txt
+Socket port at client from peer client file : 36904
+File available location : 
+***********************************************
+localhost:52001
+***********************************************
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+1
+Enter filename : 
+52002.txt
+Socket port at client from peer client file : 36906
+File available location : 
+***********************************************
+localhost:52002
+***********************************************
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+2
+Enter filename : 
+52002.txt
+Enter Host name of Peer to download (example: localhost) : 
+localhost
+Enter Port address of Peer to download  (example: 6100) : 
+52002
+Request is sent to download ... 
+Downloading ...
+Download Complete ...
+Printing downloaded file contents : 
+
+ i am file 52002.txt
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
+1
+Enter filename : 
+52002.txt
+Socket port at client from peer client file : 36929
+File available location : 
+***********************************************
+localhost:52002
+localhost:52001
+***********************************************
+List of Choices : 
+1 : Lookup a file
+2 : Download file from a peer
+3 : Register File
+4 : Exit
+Enter your choice number
